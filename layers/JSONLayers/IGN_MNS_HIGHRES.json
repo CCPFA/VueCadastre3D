@@ -8,7 +8,7 @@
 		}
 	},
 	"source": {
-		"url":        "https://wxs.ign.fr/jcx786b3aad4khzcj6ld36a8/geoportail/wmts",
+		"url":        "https://wxs.ign.fr/wgghynmnu00xo0iaea5cfovx/geoportail/wmts",
         "projection": "EPSG:4326",
 		"format": "image/x-bil;bits=32",
 		"attribution" : {

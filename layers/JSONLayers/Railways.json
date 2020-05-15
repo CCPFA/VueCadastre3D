@@ -6,7 +6,7 @@
   "transparent": true,
   "source": {
     "projection": "EPSG:3857",
-    "url": "https://wxs.ign.fr/jcx786b3aad4khzcj6ld36a8/geoportail/wmts",
+    "url": "https://wxs.ign.fr/wgghynmnu00xo0iaea5cfovx/geoportail/wmts",
     "format": "image/png",
     "networkOptions": {
       "crossOrigin": "omit"

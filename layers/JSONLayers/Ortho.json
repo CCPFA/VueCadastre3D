@@ -1,7 +1,7 @@
 {
     "id":   "Ortho",
     "source": {
-        "url": "https://wxs.ign.fr/jcx786b3aad4khzcj6ld36a8/geoportail/wmts",
+        "url": "https://wxs.ign.fr/wgghynmnu00xo0iaea5cfovx/geoportail/wmts",
         "projection": "EPSG:3857",
         "networkOptions": {
             "crossOrigin": "anonymous"
