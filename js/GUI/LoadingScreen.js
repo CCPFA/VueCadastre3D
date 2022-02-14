@@ -12,9 +12,13 @@ function setupLoadingScreen(viewerDiv, view) {
     loadingScreenContainer = document.createElement('div');
     // eslint-disable-next-line no-multi-str
     loadingScreenContainer.innerHTML = '\
-        <div>\
-        <span class="c1">i</span><span class="c2">T</span><span class="c3">o</span><span class="c4">w</span><span class="c5">n</span><span class="c6">s</span>\
-        </div>';
+		<div>\
+        <span class="c1">Chargement de la vue 3D </span><span class="c1">.</span><span class="c2">.</span><span class="c3">.</span>\
+        </div>\
+		<div id="logo">\
+		<img src="./images/Logo_pfa.png"/ height=75>\
+		</div>\
+		';
     loadingScreenContainer.id = 'itowns-loader';
     viewerDiv.appendChild(loadingScreenContainer);
 
@@ -37,5 +41,5 @@ function setupLoadingScreen(viewerDiv, view) {
     }
 
     view.addEventListener(itowns.VIEW_EVENTS.LAYERS_INITIALIZED, hideLoader);
-    setTimeout(hideLoader, 3000);
+    setTimeout(hideLoader, 5000);
 }

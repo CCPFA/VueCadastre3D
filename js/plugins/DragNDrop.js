@@ -120,7 +120,7 @@ var DragNDrop = (function _() {
                     // Move the camera to the first vertex
                     itowns.CameraUtils.animateCameraToLookAtTarget(_view, _view.camera.camera3D, {
                         coord: new itowns.Coordinates(result.crs, result.features[0].vertices),
-                        range: dimensions.x * dimensions.y * 1e6 * 3,
+                        range: dimensions.x * dimensions.y * 1e6,
                     });
                 });
             };

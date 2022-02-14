@@ -80,7 +80,7 @@ var FeatureToolTip = (function _() {
             stroke = '1.25px ' + style.stroke.color;
 
             if (feature.type === itowns.FEATURE_TYPES.POLYGON) {
-                symb = '&#9724';
+                symb = ''//'&#9724';
             } else if (feature.type === itowns.FEATURE_TYPES.LINE) {
                 symb = '&#9473';
                 fill = style.stroke.color;
@@ -102,17 +102,17 @@ var FeatureToolTip = (function _() {
 								//content += '</span>';
                                 content +=  addcontent;}
 			}
-			if (geometry.properties.nom) {
-								//addcontent=( geometry.properties.Description || "<span style='font-size:16px'><b>"+geometry.properties.nom+'</b></span>' || "<span style='font-size:16px'><b>"+geometry.properties.Nom+'</b></span>' ||"<span style='font-size:16px'><b>"+geometry.properties.rec+'</b></span>'+"<i><br><span style='font-size:12px'>"+geometry.properties.toponyme+'</span></i>' || layer.name || '');
-								addcontent= "<span style='font-size:16px'><b>"+geometry.properties.nom+'</b></span>' ;
+			// if (geometry.properties.nom) {
+								addcontent=( geometry.properties.Description || "<span style='font-size:16px'><b>"+geometry.properties.nom+'</b></span>' || "<span style='font-size:16px'><b>"+geometry.properties.Nom+'</b></span>' ||"<span style='font-size:16px'><b>"+geometry.properties.rec+'</b></span>'+"<i><br><span style='font-size:12px'>"+geometry.properties.toponyme+'</span></i>' || layer.name || '');
+								// addcontent= "<span style='font-size:16px'><b>"+geometry.properties.nom+'</b></span>' ;
 
-								if (!(content.includes(addcontent))){ 
-								//content += '<p>';
-								//content += '<span style="color: ' + fill + ';font-size:16px; -webkit-text-stroke: ' + stroke + '">';
-								//content += symb + ' ';
-								//content += '</span>';
-                                content +=  addcontent;}
-			}
+								// if (!(content.includes(addcontent))){ 
+								content += '<p>';
+								content += '<span style="color: ' + fill + ';font-size:16px; -webkit-text-stroke: ' + stroke + '">';
+								content += symb + ' ';
+								content += '</span>';
+                                // content +=  addcontent;}
+			// }
 			if (geometry.properties.Description) {
 								//addcontent=( geometry.properties.Description || "<span style='font-size:16px'><b>"+geometry.properties.nom+'</b></span>' || "<span style='font-size:16px'><b>"+geometry.properties.Nom+'</b></span>' ||"<span style='font-size:16px'><b>"+geometry.properties.rec+'</b></span>'+"<i><br><span style='font-size:12px'>"+geometry.properties.toponyme+'</span></i>' || layer.name || '');
 								addcontent= geometry.properties.Description ;
@@ -136,7 +136,18 @@ var FeatureToolTip = (function _() {
                                 content +=  addcontent;}
          
 		 }
+		if (geometry.properties.MATRICULE) {
+								//addcontent=( geometry.properties.Description || "<span style='font-size:16px'><b>"+geometry.properties.nom+'</b></span>' || "<span style='font-size:16px'><b>"+geometry.properties.Nom+'</b></span>' ||"<span style='font-size:16px'><b>"+geometry.properties.rec+'</b></span>'+"<i><br><span style='font-size:12px'>"+geometry.properties.toponyme+'</span></i>' || layer.name || '');
+								addcontent= "<span style='font-size:16px'><b>"+geometry.properties.MATRICULE+'</b></span>'+"<i><br><span style='font-size:12px'>"+geometry.properties.TYPE+'</span></i>' ;
 
+								if (!(content.includes(addcontent))){ 
+								//content += '<p>';
+								//content += '<span style="color: ' + fill + ';font-size:16px; -webkit-text-stroke: ' + stroke + '">';
+								//content += symb + ' ';
+								//content += '</span>';
+                                content +=  addcontent;}
+         
+		 }
             //if (feature.type === itowns.FEATURE_TYPES.POINT) {
             //    content += '<br/><span class="coord">long ' + feature.coordinates[0].toFixed(4) + '</span>';
             //    content += '<br/><span class="coord">lat ' + feature.coordinates[1].toFixed(4) + '</span>';
