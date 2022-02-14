@@ -2,8 +2,8 @@
     "id":         "ScanEX",
     "fx" :        2.5,
     "source": {
-        "projection": "EPSG:3857",
-        "url": "https://wxs.ign.fr/wgghynmnu00xo0iaea5cfovx/geoportail/wmts",
+        "crs": "EPSG:3857",
+        "url": "https://wxs.ign.fr/z5i3510p3odejtzlo0mj1dmi/geoportail/wmts",
         "format": "image/jpeg",
         "name": "GEOGRAPHICALGRIDSYSTEMS.MAPS.SCAN-EXPRESS.STANDARD",
         "attribution" : {

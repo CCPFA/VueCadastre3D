@@ -2,14 +2,14 @@
     "id"        : "Region",
     "transparent" : true,
     "source": {
-        "url"       : "https://wxs.ign.fr/jcx786b3aad4khzcj6ld36a8/geoportail/v/wms",
+        "url"       : "https://wxs.ign.fr/z5i3510p3odejtzlo0mj1dmi/geoportail/v/wms",
         "networkOptions": {
             "crossOrigin": "anonymous"
         },
         "version"   : "1.3.0",
         "name"      : "REGIONS.2017",
         "style"      : "",
-        "projection" : "EPSG:3857",
+        "crs" : "EPSG:3857",
         "extent": {
             "west": "-6880639.13669047",
             "east": "6215707.87640867",

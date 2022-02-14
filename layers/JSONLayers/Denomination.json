@@ -5,8 +5,8 @@
   "opacity": 1,
   "transparent": true,
   "source": {
-    "url": "https://wxs.ign.fr/wgghynmnu00xo0iaea5cfovx/geoportail/wmts",
-    "projection": "EPSG:3857",
+    "url": "https://wxs.ign.fr/choisirgeoportail/geoportail/wmts",
+    "crs": "EPSG:3857",
     "tileMatrixSet": "PM",
     "format": "image/png",
     "name": "GEOGRAPHICALNAMES.NAMES",

@@ -5,14 +5,14 @@
   "opacity": 1,
   "transparent": true,
   "source": {
-    "url": "https://wxs.ign.fr/wgghynmnu00xo0iaea5cfovx/geoportail/wmts",
-    "projection": "EPSG:3857",
+    "url": "https://wxs.ign.fr/parcellaire/geoportail/wmts",
+    "crs": "EPSG:3857",
     "networkOptions": {
       "crossOrigin": "omit"
     },
     "version": "1.0.0",
-    "name": "CADASTRALPARCELS.PARCELLAIRE_EXPRESS",
-    "style": "PCI vecteur",
+    "name": "CADASTRALPARCELS.PARCELS",
+    "style": "bdparcellaire",
     "zoom": {
       "min": 5,
       "max": 20

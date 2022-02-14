@@ -3,8 +3,8 @@
     "opacity": 1,
     "transparent": true,
     "source": {
-        "projection": "EPSG:3857",
-        "url":        "http://wxs.ign.fr/wgghynmnu00xo0iaea5cfovx/geoportail/wmts",
+        "crs": "EPSG:3857",
+        "url":        "http://wxs.ign.fr/cartes/geoportail/wmts",
         "networkOptions": {
             "crossOrigin": "anonymous"
         },

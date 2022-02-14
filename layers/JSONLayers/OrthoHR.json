@@ -11,7 +11,7 @@
             "name":"IGN",
             "url":"http://www.ign.fr/"
         },
-        "name": "ORTHOIMAGERY.ORTHOPHOTOS",
+        "name": "HR.ORTHOIMAGERY.ORTHOPHOTOS",
         "tileMatrixSet": "PM",
         "tileMatrixSetLimits": {
             "2": {
